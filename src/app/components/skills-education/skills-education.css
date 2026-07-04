@@ -1,0 +1,140 @@
+.section {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 96px 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skill-card,
+.info-card {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03)),
+    var(--surface);
+  padding: 24px;
+}
+
+.skill-card h3,
+.info-card h3 {
+  margin: 0 0 18px;
+  font-size: 1.25rem;
+  letter-spacing: -0.03em;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--primary-soft);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.large-card {
+  grid-row: span 2;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+h4 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.education-item span {
+  flex-shrink: 0;
+  color: var(--primary-soft);
+  font-weight: 700;
+  text-align: right;
+}
+
+.simple-list {
+  display: grid;
+  gap: 18px;
+}
+
+.language-list {
+  display: grid;
+  gap: 12px;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.language-item:first-child {
+  padding-top: 0;
+}
+
+.language-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.language-item span {
+  color: var(--muted);
+}
+
+.language-item strong {
+  color: var(--primary-soft);
+}
+
+@media (max-width: 900px) {
+  .skills-grid,
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .large-card {
+    grid-row: auto;
+  }
+
+  .education-item {
+    flex-direction: column;
+  }
+
+  .education-item span {
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .skill-card,
+  .info-card {
+    padding: 22px;
+  }
+}
