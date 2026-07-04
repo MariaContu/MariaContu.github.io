@@ -1,0 +1,66 @@
+{
+  "skills": {
+    "eyebrow": "Habilidades",
+    "title": "Tecnologias e ferramentas que uso no desenvolvimento.",
+    "description": "Meu foco está em desenvolvimento full stack, com maior interesse em back-end, APIs, arquitetura em camadas e sistemas escaláveis.",
+    "groups": [
+      {
+        "title": "Back-end",
+        "items": [".NET", "C#", "Java", "Spring Boot", "APIs REST", "Arquitetura em camadas"]
+      },
+      {
+        "title": "Front-end",
+        "items": ["Angular", "React", "HTML", "CSS", "JavaScript", "TypeScript"]
+      },
+      {
+        "title": "Testes",
+        "items": ["BDD", "SpecFlow", "Testes unitários"]
+      },
+      {
+        "title": "Banco de dados",
+        "items": ["PostgreSQL", "MySQL"]
+      },
+      {
+        "title": "Ferramentas",
+        "items": ["Git", "GitHub", "GitLab", "Postman"]
+      },
+      {
+        "title": "Metodologias",
+        "items": ["Scrum", "Kanban"]
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "Formação",
+    "title": "Formação acadêmica, cursos e idiomas.",
+    "description": "Base acadêmica em Ciência da Computação, complementada por certificações e estudos contínuos em desenvolvimento de software.",
+    "items": [
+      {
+        "title": "Bacharelado em Ciência da Computação",
+        "institution": "PUCRS",
+        "period": "2022 — 2026",
+        "status": "Em andamento"
+      }
+    ],
+    "certificates": [
+      {
+        "title": "Scrum Foundation Professional Certification (SFPC)",
+        "institution": "CertiProf"
+      },
+      {
+        "title": "Cursos de HTML, CSS e JavaScript",
+        "institution": "Alura"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Inglês",
+        "level": "Avançado"
+      },
+      {
+        "language": "Espanhol",
+        "level": "Básico"
+      }
+    ]
+  }
+}
