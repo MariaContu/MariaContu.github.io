@@ -1,0 +1,56 @@
+<section id="contact" class="section contact">
+  <app-section-title
+    [eyebrow]="contact.eyebrow"
+    [title]="contact.title"
+    [description]="contact.description"
+  ></app-section-title>
+
+  <div class="contact-card">
+    <div class="contact-main">
+      <h3>Entre em contato</h3>
+
+      <p>
+        Você pode me chamar por e-mail, acessar meu LinkedIn ou acompanhar meus projetos pelo
+        GitHub.
+      </p>
+
+      <div class="contact-actions">
+        <a class="button primary" [href]="'mailto:' + contact.email"> Enviar e-mail </a>
+
+        <a
+          class="button secondary"
+          href="https://www.linkedin.com/in/mecontudo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div class="info-item">
+        <span>E-mail</span>
+        <a [href]="'mailto:' + contact.email">{{ contact.email }}</a>
+      </div>
+
+      <div class="info-item">
+        <span>Telefone</span>
+        <a [href]="'tel:' + contact.phoneHref">{{ contact.phone }}</a>
+      </div>
+
+      <div class="info-item">
+        <span>Localização</span>
+        <p>{{ contact.location }}</p>
+      </div>
+
+      <div class="social-links">
+        @for (link of contact.links; track link.label) {
+          <a [href]="link.url" target="_blank" rel="noopener noreferrer">
+            {{ link.label }}
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+</section>

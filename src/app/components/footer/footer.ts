@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import contact from '../../data/contact.json';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css',
 })
 export class Footer {
-
+  contact = contact;
+  currentYear = new Date().getFullYear();
 }
