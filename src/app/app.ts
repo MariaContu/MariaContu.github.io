@@ -4,10 +4,11 @@ import { Header } from './components/header/header';
 import { Hero } from './components/hero/hero';
 import { About } from './components/about/about';
 import { Experience } from './components/experience/experience';
+import { Projects } from './components/projects/projects';
 
 @Component({
   selector: 'app-root',
-  imports: [Footer, Header, Hero, About, Experience],
+  imports: [Footer, Header, Hero, About, Experience, Projects],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

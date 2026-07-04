@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import { SectionTitle } from "../section-title/section-title";
+
+@Component({
+  selector: 'app-projects',
+  imports: [SectionTitle],
+  templateUrl: './projects.html',
+  styleUrl: './projects.css',
+})
+export class Projects {
+
+}
