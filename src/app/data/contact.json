@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Contato",
+  "title": "Vamos conversar?",
+  "description": "Estou aberta a oportunidades, conexões profissionais e conversas sobre desenvolvimento, tecnologia e projetos.",
+  "email": "mariaescontu@gmail.com",
+  "phone": "(51) 99936-3825",
+  "phoneHref": "+5551999363825",
+  "location": "Porto Alegre, RS",
+  "links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mecontudo/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/MariaContu"
+    },
+    {
+      "label": "E-mail",
+      "url": "mailto:mariaescontu@gmail.com"
+    }
+  ]
+}

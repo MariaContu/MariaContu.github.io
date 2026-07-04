@@ -4,4 +4,34 @@
   padding: 32px 0;
   color: var(--muted);
   border-top: 1px solid var(--border);
+  display: grid;
+  gap: 18px;
+}
+
+.footer strong {
+  color: var(--text);
+}
+
+.footer p {
+  margin: 6px 0 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-soft);
+}
+
+.copyright {
+  font-size: 0.9rem;
 }
