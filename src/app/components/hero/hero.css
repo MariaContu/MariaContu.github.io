@@ -155,6 +155,10 @@ h1 span {
   font-weight: 700;
 }
 
+.secondary-description {
+  margin-top: -12px;
+}
+
 @media (max-width: 860px) {
   .hero {
     grid-template-columns: 1fr;

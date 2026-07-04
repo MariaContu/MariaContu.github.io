@@ -1,0 +1,66 @@
+{
+  "eyebrow": "Projetos",
+  "title": "Projetos publicados e em desenvolvimento.",
+  "description": "Uma seleção de projetos funcionais, acadêmicos e em construção, reunindo front-end, back-end, jogos e inteligência artificial.",
+  "items": [
+    {
+      "name": "Tarot Insight",
+      "type": "Front-end · Angular",
+      "status": "Publicado",
+      "featured": true,
+      "description": "Aplicação front-end em Angular que funciona como uma biblioteca interativa de cartas de tarot. O projeto permite navegar pelas cartas, filtrar por arcanos e naipes, visualizar significados e usar um modo de sorteio para praticar interpretação antes de revelar a resposta.",
+      "technologies": ["Angular", "TypeScript", "HTML", "CSS", "GitHub Pages"],
+      "links": [
+        {
+          "label": "Ver projeto",
+          "url": "https://mariacontu.github.io/TarotInsight/"
+        },
+        {
+          "label": "Repositório",
+          "url": "https://github.com/MariaContu/TarotInsight"
+        }
+      ]
+    },
+    {
+      "name": "Brioche's Away",
+      "type": "Game Dev · Godot",
+      "status": "Publicado",
+      "featured": false,
+      "description": "Jogo 2D de puzzle desenvolvido em Godot durante a faculdade. A aventura acompanha Agatha, uma garota que acorda e percebe que seu gato de pelúcia, Brioche, desapareceu. A partir disso, ela precisa refazer seus últimos passos, resolver pequenos quebra-cabeças e encontrar seu melhor amigo.",
+      "technologies": ["Godot", "Game Design", "2D", "Puzzle", "Pixel Art"],
+      "links": [
+        {
+          "label": "Ver no itch.io",
+          "url": "https://mecontudo.itch.io/brioches-away"
+        }
+      ]
+    },
+    {
+      "name": "Sistema de Recomendação Híbrido para Jogos Digitais",
+      "type": "TCC · IA · Game Dev",
+      "status": "Em desenvolvimento",
+      "featured": true,
+      "description": "Projeto de TCC em desenvolvimento que propõe um sistema de recomendação híbrido baseado em inteligência artificial para adaptação de missões em jogos digitais. A proposta combina dados externos, como perfil Steam, e dados comportamentais in-game para ajustar a distribuição de missões entre combate, exploração e quebra-cabeça.",
+      "technologies": ["IA", "Recommender Systems", "Godot", "C#", "Steam API", "Machine Learning"],
+      "links": []
+    },
+    {
+      "name": "API de Gerenciamento de Tarefas",
+      "type": "Back-end · Spring Boot",
+      "status": "Em desenvolvimento",
+      "featured": false,
+      "description": "API REST para gerenciamento de usuários e tarefas, com autenticação JWT, persistência em PostgreSQL, arquitetura em camadas e documentação com Swagger.",
+      "technologies": ["Java", "Spring Boot", "JWT", "PostgreSQL", "Swagger", "APIs REST"],
+      "links": []
+    },
+    {
+      "name": "Sistema de Monitoramento de APIs",
+      "type": "Back-end · .NET",
+      "status": "Em desenvolvimento",
+      "featured": false,
+      "description": "Aplicação back-end em .NET para monitoramento de endpoints, coleta de status HTTP, tempo de resposta e persistência de histórico de requisições em banco de dados.",
+      "technologies": [".NET", "C#", "APIs REST", "PostgreSQL", "Monitoramento", "Back-end"],
+      "links": []
+    }
+  ]
+}

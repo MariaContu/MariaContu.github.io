@@ -1,0 +1,22 @@
+{
+  "eyebrow": "Experiência",
+  "title": "Atuação prática em desenvolvimento corporativo.",
+  "description": "Experiência com front-end, back-end, APIs REST, testes automatizados e colaboração em times ágeis.",
+  "items": [
+    {
+      "company": "Dell Technologies",
+      "role": "Estagiária de Desenvolvimento",
+      "period": "Jun/2025 — Atual",
+      "summary": "Atuação no desenvolvimento e manutenção de aplicações corporativas, contribuindo em funcionalidades de front-end, serviços back-end, integração entre sistemas e automação de testes.",
+      "responsibilities": [
+        "Desenvolvimento de interfaces em Angular para aplicações corporativas, atuando na manutenção e evolução de funcionalidades.",
+        "Implementação e manutenção de serviços back-end em .NET, seguindo padrões de arquitetura em camadas.",
+        "Construção e integração de APIs REST, garantindo comunicação eficiente entre sistemas.",
+        "Automação de testes utilizando BDD com SpecFlow, contribuindo para a confiabilidade das aplicações.",
+        "Atuação em debugging, resolução de problemas, code reviews e colaboração contínua com o time de desenvolvimento.",
+        "Participação em cerimônias ágeis utilizando Scrum e ferramentas do fluxo de desenvolvimento como Git e Postman."
+      ],
+      "technologies": ["Angular", ".NET", "APIs REST", "SpecFlow", "BDD", "Git", "Postman", "Scrum"]
+    }
+  ]
+}

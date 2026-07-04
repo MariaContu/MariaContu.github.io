@@ -20,8 +20,7 @@
   border: 1px solid var(--border);
   border-radius: 28px;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)),
-    var(--surface);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.03)), var(--surface);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -29,7 +28,7 @@
 }
 
 .project-card::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: auto -80px -120px auto;
   width: 220px;
@@ -46,8 +45,11 @@
 
 .featured {
   background:
-    linear-gradient(145deg, rgba(139, 92, 246, 0.18), rgba(255, 255, 255, 0.04)),
-    var(--surface);
+    linear-gradient(145deg, rgba(139, 92, 246, 0.18), rgba(255, 255, 255, 0.04)), var(--surface);
+}
+
+.in-development {
+  opacity: 0.9;
 }
 
 .project-top {
@@ -78,6 +80,11 @@
   border: 1px solid rgba(34, 197, 94, 0.32);
   font-size: 0.82rem;
   font-weight: 700;
+}
+
+.status-development {
+  background: rgba(234, 179, 8, 0.14);
+  border-color: rgba(234, 179, 8, 0.34);
 }
 
 h3 {
@@ -143,6 +150,19 @@ h3 {
 .project-links a:hover {
   transform: translateY(-2px);
   border-color: rgba(196, 181, 253, 0.42);
+}
+
+.soon-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed var(--border);
+  font-weight: 700;
 }
 
 @media (max-width: 860px) {
