@@ -1,0 +1,15 @@
+{
+  "name": "Maria Eduarda Contu",
+  "shortName": "Maria Contu",
+  "headline": "Desenvolvedora Full Stack",
+  "role": "Estagiária de Desenvolvimento",
+  "location": "Porto Alegre, RS",
+  "email": "mariaescontu@gmail.com",
+  "phone": "(51) 99936-3825",
+  "linkedin": "https://www.linkedin.com/in/mecontudo/",
+  "github": "https://github.com/MariaContu",
+  "summary": "Estudante de Ciência da Computação na PUCRS e estagiária de desenvolvimento na Dell Technologies. Trabalho com Angular, .NET, APIs REST e testes BDD, unindo front-end, back-end e boas práticas de desenvolvimento.",
+  "focus": "Tenho interesse especial por desenvolvimento back-end, Java, arquitetura de microsserviços e sistemas escaláveis, sem deixar de lado a criação de interfaces bem estruturadas e fáceis de usar.",
+  "availableText": "Disponível para novas oportunidades",
+  "stack": ["Angular", ".NET", "Java", "Spring Boot", "PostgreSQL", "BDD"]
+}

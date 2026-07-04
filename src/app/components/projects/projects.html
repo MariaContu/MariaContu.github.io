@@ -1,81 +1,52 @@
 <section id="projects" class="section projects">
   <app-section-title
-    eyebrow="Projetos"
-    title="Projetos publicados e funcionais."
-    description="Uma seleção de projetos que já podem ser acessados, testados ou visualizados online."
+    [eyebrow]="projects.eyebrow"
+    [title]="projects.title"
+    [description]="projects.description"
   ></app-section-title>
 
   <div class="projects-grid">
-    <article class="project-card featured">
-      <div class="project-top">
-        <p class="project-type">Front-end · Angular</p>
-        <span class="project-status">Publicado</span>
-      </div>
+    @for (project of projects.items; track project.name) {
+      <article
+        class="project-card"
+        [class.featured]="project.featured"
+        [class.in-development]="project.status === 'Em desenvolvimento'"
+      >
+        <div class="project-top">
+          <p class="project-type">{{ project.type }}</p>
 
-      <h3>Tarot Insight</h3>
+          <span
+            class="project-status"
+            [class.status-development]="project.status === 'Em desenvolvimento'"
+          >
+            {{ project.status }}
+          </span>
+        </div>
 
-      <p class="project-description">
-        Aplicação front-end em Angular que funciona como uma biblioteca interativa de cartas de
-        tarot. O projeto permite navegar pelas cartas, filtrar por arcanos e naipes, visualizar
-        significados e usar um modo de sorteio para praticar interpretação antes de revelar a
-        resposta.
-      </p>
+        <h3>{{ project.name }}</h3>
 
-      <div class="tech-list">
-        <span>Angular</span>
-        <span>TypeScript</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>GitHub Pages</span>
-      </div>
+        <p class="project-description">
+          {{ project.description }}
+        </p>
 
-      <div class="project-links">
-        <a
-          href="https://mariacontu.github.io/TarotInsight/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ver projeto
-        </a>
+        <div class="tech-list">
+          @for (technology of project.technologies; track technology) {
+            <span>{{ technology }}</span>
+          }
+        </div>
 
-        <a
-          href="https://github.com/MariaContu/TarotInsight"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Repositório
-        </a>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <div class="project-top">
-        <p class="project-type">Game Dev · Godot</p>
-        <span class="project-status">Publicado</span>
-      </div>
-
-      <h3>Brioche's Away</h3>
-
-      <p class="project-description">
-        Jogo 2D de puzzle desenvolvido em Godot. A aventura acompanha Agatha,
-        uma garota que acorda e percebe que seu gato de pelúcia, Brioche, desapareceu. A partir
-        disso, ela precisa refazer seus últimos passos, resolver pequenos quebra-cabeças e encontrar
-        seu melhor amigo.
-      </p>
-
-      <div class="tech-list">
-        <span>Godot</span>
-        <span>Game Design</span>
-        <span>2D</span>
-        <span>Puzzle</span>
-        <span>Pixel Art</span>
-      </div>
-
-      <div class="project-links">
-        <a href="https://mecontudo.itch.io/brioches-away" target="_blank" rel="noopener noreferrer">
-          Ver no itch.io
-        </a>
-      </div>
-    </article>
+        <div class="project-links">
+          @if (project.links.length > 0) {
+            @for (link of project.links; track link.url) {
+              <a [href]="link.url" target="_blank" rel="noopener noreferrer">
+                {{ link.label }}
+              </a>
+            }
+          } @else {
+            <span class="soon-label">Links em breve</span>
+          }
+        </div>
+      </article>
+    }
   </div>
 </section>

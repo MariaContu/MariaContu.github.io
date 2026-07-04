@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { SectionTitle } from "../section-title/section-title";
+import { SectionTitle } from '../section-title/section-title';
+import about from '../../data/about.json';
 
 @Component({
   selector: 'app-about',
@@ -8,5 +9,5 @@ import { SectionTitle } from "../section-title/section-title";
   styleUrl: './about.css',
 })
 export class About {
-
+  about = about;
 }
