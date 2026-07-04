@@ -33,13 +33,28 @@
 
 @media (max-width: 760px) {
   .header {
+    width: 100%;
+    padding: 16px;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
     flex-direction: column;
+    background: rgba(15, 16, 32, 0.78);
+    border-bottom: 1px solid var(--border);
   }
 
   .nav {
-    flex-wrap: wrap;
-    gap: 12px;
+    width: 100%;
+    overflow-x: auto;
+    gap: 14px;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
   }
 }

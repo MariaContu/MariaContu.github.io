@@ -21,7 +21,9 @@ body {
   margin: 0;
   font-family: Inter, Arial, Helvetica, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(139, 92, 246, 0.22), transparent 34rem), var(--bg);
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.24), transparent 34rem),
+    radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.14), transparent 28rem),
+    radial-gradient(circle at 50% 100%, rgba(139, 92, 246, 0.12), transparent 32rem), var(--bg);
   color: var(--text);
 }
 
@@ -34,4 +36,17 @@ button,
 input,
 textarea {
   font: inherit;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  scroll-margin-top: 96px;
 }

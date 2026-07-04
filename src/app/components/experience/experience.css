@@ -130,3 +130,9 @@ h3 {
     width: fit-content;
   }
 }
+
+@media (max-width: 560px) {
+  .section {
+    padding: 72px 0;
+  }
+}

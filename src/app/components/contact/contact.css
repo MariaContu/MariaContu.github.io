@@ -12,8 +12,7 @@
   border: 1px solid var(--border);
   border-radius: 32px;
   background:
-    linear-gradient(145deg, rgba(139, 92, 246, 0.18), rgba(255, 255, 255, 0.04)),
-    var(--surface);
+    linear-gradient(145deg, rgba(139, 92, 246, 0.18), rgba(255, 255, 255, 0.04)), var(--surface);
 }
 
 .contact-main {
@@ -147,5 +146,25 @@ p {
 
   .contact-info {
     padding: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .section {
+    padding: 72px 0;
+  }
+}
+@media (max-width: 560px) {
+  .contact-actions {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .social-links a {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
   }
 }

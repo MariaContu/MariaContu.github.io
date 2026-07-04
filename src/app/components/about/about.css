@@ -46,3 +46,9 @@ p + p {
     grid-row: auto;
   }
 }
+
+@media (max-width: 560px) {
+  .section {
+    padding: 72px 0;
+  }
+}
