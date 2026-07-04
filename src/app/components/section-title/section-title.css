@@ -1,0 +1,23 @@
+.section-title {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: var(--primary-soft);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 680px;
+  color: var(--muted);
+  line-height: 1.7;
+}
