@@ -1,7 +1,7 @@
 {
   "eyebrow": "Projetos",
   "title": "Projetos publicados e em desenvolvimento.",
-  "description": "Uma seleção de projetos funcionais, acadêmicos e em construção, reunindo front-end, back-end, jogos e inteligência artificial.",
+  "description": "Uma seleção de projetos funcionais, acadêmicos e em construção, reunindo front-end, back-end, jogos, RPG e inteligência artificial.",
   "items": [
     {
       "name": "Tarot Insight",
@@ -45,12 +45,20 @@
       "links": []
     },
     {
-      "name": "API de Gerenciamento de Tarefas",
-      "type": "Back-end · Spring Boot",
+      "name": "Chronicles Hub",
+      "type": "Full Stack · RPG · VTT",
       "status": "Em desenvolvimento",
-      "featured": false,
-      "description": "API REST para gerenciamento de usuários e tarefas, com autenticação JWT, persistência em PostgreSQL, arquitetura em camadas e documentação com Swagger.",
-      "technologies": ["Java", "Spring Boot", "JWT", "PostgreSQL", "Swagger", "APIs REST"],
+      "featured": true,
+      "description": "Plataforma web para gerenciamento de RPG de mesa, pensada como um hub leve, moderno e responsivo para mestres e jogadores. O projeto tem como objetivo centralizar fichas de personagem, rolagem de dados, painel do mestre e recursos de sessão em uma única aplicação, reduzindo fricções técnicas durante campanhas presenciais, remotas ou híbridas.",
+      "technologies": [
+        "Full Stack",
+        "Web App",
+        "RPG",
+        "VTT",
+        "Realtime",
+        "PWA",
+        "Design Responsivo"
+      ],
       "links": []
     },
     {
