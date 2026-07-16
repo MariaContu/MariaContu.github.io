@@ -1,19 +1,4 @@
 <section id="about" class="section about">
-  <app-section-title
-    [eyebrow]="about.eyebrow"
-    [title]="about.title"
-    [description]="about.description"
-  ></app-section-title>
-
-  <div class="about-grid">
-    @for (card of about.cards; track card.title) {
-      <article class="about-card" [class.main-card]="card.featured">
-        <h3>{{ card.title }}</h3>
-
-        @for (paragraph of card.paragraphs; track paragraph) {
-          <p>{{ paragraph }}</p>
-        }
-      </article>
-    }
-  </div>
+  <app-section-title [eyebrow]="content().about.eyebrow" [title]="content().about.title" [description]="content().about.description"></app-section-title>
+  <div class="about-grid">@for (card of content().about.cards; track card.title) { <article class="about-card" [class.main-card]="card.featured"><h3>{{ card.title }}</h3>@for (paragraph of card.paragraphs; track paragraph) { <p>{{ paragraph }}</p> }</article> }</div>
 </section>

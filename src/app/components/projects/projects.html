@@ -1,51 +1,12 @@
 <section id="projects" class="section projects">
-  <app-section-title
-    [eyebrow]="projects.eyebrow"
-    [title]="projects.title"
-    [description]="projects.description"
-  ></app-section-title>
-
+  <app-section-title [eyebrow]="content().projects.eyebrow" [title]="content().projects.title" [description]="content().projects.description"></app-section-title>
   <div class="projects-grid">
-    @for (project of projects.items; track project.name) {
-      <article
-        class="project-card"
-        [class.featured]="project.featured"
-        [class.in-development]="project.status === 'Em desenvolvimento'"
-      >
-        <div class="project-top">
-          <p class="project-type">{{ project.type }}</p>
-
-          <span
-            class="project-status"
-            [class.status-development]="project.status === 'Em desenvolvimento'"
-          >
-            {{ project.status }}
-          </span>
-        </div>
-
-        <h3>{{ project.name }}</h3>
-
-        <p class="project-description">
-          {{ project.description }}
-        </p>
-
-        <div class="tech-list">
-          @for (technology of project.technologies; track technology) {
-            <span>{{ technology }}</span>
-          }
-        </div>
-
-        <div class="project-links">
-          @if (project.links.length > 0) {
-            @for (link of project.links; track link.url) {
-              <a [href]="link.url" target="_blank" rel="noopener noreferrer">
-                {{ link.label }}
-              </a>
-            }
-          } @else {
-            <span class="soon-label">Links em breve</span>
-          }
-        </div>
+    @for (project of content().projects.items; track project.name) {
+      <article class="project-card" [class.featured]="project.featured" [class.in-development]="project.development">
+        <div class="project-top"><p class="project-type">{{ project.type }}</p><span class="project-status" [class.status-development]="project.development">{{ project.status }}</span></div>
+        <h3>{{ project.name }}</h3><p class="project-description">{{ project.description }}</p>
+        <div class="tech-list">@for (technology of project.technologies; track technology) { <span>{{ technology }}</span> }</div>
+        <div class="project-links">@if (project.links.length > 0) { @for (link of project.links; track link.url) { <a [href]="link.url" target="_blank" rel="noopener noreferrer">{{ link.label }}</a> } } @else { <span class="soon-label">{{ content().ui.linksSoon }}</span> }</div>
       </article>
     }
   </div>
