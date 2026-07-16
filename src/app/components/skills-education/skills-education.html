@@ -1,72 +1,12 @@
 <section id="skills" class="section skills-section">
-  <app-section-title
-    [eyebrow]="skills.eyebrow"
-    [title]="skills.title"
-    [description]="skills.description"
-  ></app-section-title>
-
-  <div class="skills-grid">
-    @for (group of skills.groups; track group.title) {
-      <article class="skill-card">
-        <h3>{{ group.title }}</h3>
-
-        <div class="skill-list">
-          @for (item of group.items; track item) {
-            <span>{{ item }}</span>
-          }
-        </div>
-      </article>
-    }
-  </div>
+  <app-section-title [eyebrow]="content().skillsEducation.skills.eyebrow" [title]="content().skillsEducation.skills.title" [description]="content().skillsEducation.skills.description"></app-section-title>
+  <div class="skills-grid">@for (group of content().skillsEducation.skills.groups; track group.title) { <article class="skill-card"><h3>{{ group.title }}</h3><div class="skill-list">@for (item of group.items; track item) { <span>{{ item }}</span> }</div></article> }</div>
 </section>
-
 <section id="education" class="section education-section">
-  <app-section-title
-    [eyebrow]="education.eyebrow"
-    [title]="education.title"
-    [description]="education.description"
-  ></app-section-title>
-
+  <app-section-title [eyebrow]="content().skillsEducation.education.eyebrow" [title]="content().skillsEducation.education.title" [description]="content().skillsEducation.education.description"></app-section-title>
   <div class="education-grid">
-    <article class="info-card large-card">
-      <h3>Formação acadêmica</h3>
-
-      @for (item of education.items; track item.title) {
-        <div class="education-item">
-          <div>
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.institution }}</p>
-          </div>
-
-          <span>{{ item.period }} · {{ item.status }}</span>
-        </div>
-      }
-    </article>
-
-    <article class="info-card">
-      <h3>Certificados e cursos</h3>
-
-      <div class="simple-list">
-        @for (certificate of education.certificates; track certificate.title) {
-          <div>
-            <h4>{{ certificate.title }}</h4>
-            <p>{{ certificate.institution }}</p>
-          </div>
-        }
-      </div>
-    </article>
-
-    <article class="info-card">
-      <h3>Idiomas</h3>
-
-      <div class="language-list">
-        @for (language of education.languages; track language.language) {
-          <div class="language-item">
-            <span>{{ language.language }}</span>
-            <strong>{{ language.level }}</strong>
-          </div>
-        }
-      </div>
-    </article>
+    <article class="info-card large-card"><h3>{{ content().ui.academicEducation }}</h3>@for (item of content().skillsEducation.education.items; track item.title) { <div class="education-item"><div><h4>{{ item.title }}</h4><p>{{ item.institution }}</p></div><span>{{ item.period }} · {{ item.status }}</span></div> }</article>
+    <article class="info-card"><h3>{{ content().ui.certificates }}</h3><div class="simple-list">@for (certificate of content().skillsEducation.education.certificates; track certificate.title) { <div><h4>{{ certificate.title }}</h4><p>{{ certificate.institution }}</p></div> }</div></article>
+    <article class="info-card"><h3>{{ content().ui.languages }}</h3><div class="language-list">@for (language of content().skillsEducation.education.languages; track language.language) { <div class="language-item"><span>{{ language.language }}</span><strong>{{ language.level }}</strong></div> }</div></article>
   </div>
 </section>

@@ -1,11 +1,18 @@
 <header class="header">
   <a href="#home" class="brand">Maria Contu</a>
 
-  <nav class="nav" aria-label="Navegação principal">
-    <a href="#about">Sobre</a>
-    <a href="#experience">Experiência</a>
-    <a href="#projects">Projetos</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#contact">Contato</a>
-  </nav>
+  <div class="header-actions">
+    <nav class="nav" [attr.aria-label]="content().ui.professionalLinks">
+      <a href="#about">{{ content().ui.nav.about }}</a>
+      <a href="#experience">{{ content().ui.nav.experience }}</a>
+      <a href="#projects">{{ content().ui.nav.projects }}</a>
+      <a href="#skills">{{ content().ui.nav.skills }}</a>
+      <a href="#contact">{{ content().ui.nav.contact }}</a>
+    </nav>
+
+    <button class="language-toggle" type="button" (click)="languageService.toggleLanguage()" [attr.aria-label]="content().ui.languageLabel" [title]="content().ui.languageLabel">
+      <span aria-hidden="true">🌐</span>
+      {{ content().ui.languageButton }}
+    </button>
+  </div>
 </header>

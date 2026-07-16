@@ -1,12 +1,12 @@
 <section id="experience" class="section experience">
   <app-section-title
-    [eyebrow]="experience.eyebrow"
-    [title]="experience.title"
-    [description]="experience.description"
+    [eyebrow]="content().experience.eyebrow"
+    [title]="content().experience.title"
+    [description]="content().experience.description"
   ></app-section-title>
 
   <div class="timeline">
-    @for (item of experience.items; track item.company) {
+    @for (item of content().experience.items; track item.company) {
       <article class="experience-card">
         <div class="marker" aria-hidden="true"></div>
 
@@ -30,7 +30,7 @@
             }
           </ul>
 
-          <div class="tags" aria-label="Tecnologias utilizadas">
+          <div class="tags" [attr.aria-label]="content().ui.technologiesUsed">
             @for (technology of item.technologies; track technology) {
               <span>{{ technology }}</span>
             }
